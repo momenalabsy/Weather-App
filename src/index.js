@@ -6,7 +6,7 @@ const celsius = document.querySelector("#celsius");
 const fahrenheit = document.querySelector("#fahrenheit");
 const icon = document.querySelector("#icon");
 const city = document.querySelector("#city");
-const provinance = document.querySelector("#name");
+const provenance = document.querySelector("#name");
 const region = document.querySelector("#region");
 const body = document.querySelector("body");
 
@@ -36,9 +36,9 @@ function updateWeatherUI(data) {
   celsius.innerHTML = `${data.current.temp_c}&deg;C`;
   city.innerHTML = data.location.country;
   region.innerHTML = data.location.region;
-  provinance.innerHTML = data.location.name;
+  provenance.innerHTML = data.location.name;
 
-  icon.src = `http:${data.current.condition.icon}`;
+  icon.src = `https:${data.current.condition.icon}`;
   if (data.current.is_day) {
     body.style.backgroundImage =
       "linear-gradient(rgb(255, 245, 230), rgb(253, 188, 46))";
