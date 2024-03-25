@@ -1,3 +1,5 @@
+import "./style.css";
+
 const search = document.querySelector("#search");
 const enter = document.querySelector("#enter");
 const celsius = document.querySelector("#celsius");
