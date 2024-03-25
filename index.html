@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <script src="./index.bundle.js" defer></script>
+  </head>
+  <body>
+    <form>
+      <label for="search">Search</label>
+      <div>
+        <input type="text" id="search" required />
+        <button id="enter" type="button">Enter</button>
+      </div>
+    </form>
+    <div id="weather-box">
+      <div><img src="#" alt="" id="icon" /></div>
+      <div id="weather-info">
+        <p id="city"></p>
+        <p id="region"></p>
+        <p id="name"></p>
+        <p id="celsius"></p>
+        <p id="fahrenheit"></p>
+      </div>
+    </div>
+    <div id="next"></div>
+  </body>
+</html>
