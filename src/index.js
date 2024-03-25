@@ -13,7 +13,7 @@ const body = document.querySelector("body");
 async function getWeatherData(c) {
   try {
     const response = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=618c4948f5464fee86c165832242103&q=${c}`
+      `https://api.weatherapi.com/v1/current.json?key=618c4948f5464fee86c165832242103&q=${c}`
     );
 
     if (!response.ok) {
@@ -53,9 +53,7 @@ enter.addEventListener("click", async () => {
     const weatherData = await getWeatherData(search.value);
     updateWeatherUI(weatherData);
   } catch (error) {
-    // Handle errors and provide feedback to the user
     console.error(error.message);
-    // eslint-disable-next-line no-alert
     alert(error.message);
   }
 });
