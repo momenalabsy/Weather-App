@@ -2,16 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Weather App</title>
-    <link rel="stylesheet" href="/src/style.css" />
-    <script src="./index.bundle.js" defer></script>
   </head>
   <body>
     <form>
       <label for="search">Search</label>
       <div>
-        <input type="text" id="search" required />
+        <input id="search" required />
         <button id="enter" type="button">Enter</button>
       </div>
     </form>
@@ -25,6 +23,6 @@
         <p id="fahrenheit"></p>
       </div>
     </div>
-    <div id="next"></div>
+    <script defer="defer" src="index.bundle.js"></script>
   </body>
 </html>
