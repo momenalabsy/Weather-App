@@ -57,6 +57,3 @@ enter.addEventListener("click", async () => {
     alert(error.message);
   }
 });
-
-// body.style.backgroundImage =
-//   "http://cdn.weatherapi.com/weather/64x64/day/116.png";
